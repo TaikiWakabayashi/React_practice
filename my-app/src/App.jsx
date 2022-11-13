@@ -2,6 +2,10 @@ import { Fragment } from "react";
 import { ColoredMessage } from "./components/ColoredMessage";
 import { useState } from "react";
 import { CssModules } from "./CSS/CssModules";
+import { StyledComponents } from "./components/StyledComponents";
+import { Emotion } from "./Emotion/Emotion";
+// import { TailwindCss } from "./TailwindCss";
+
 
 export const App = () => {
 
@@ -19,7 +23,13 @@ export const App = () => {
             <button onClick={ onClickButton }>ボタン</button>
             <p>{ num }</p>
             <br/>
-            <ColoredMessage></ColoredMessage>
+            <CssModules></CssModules>
+            <br/>
+            <StyledComponents></StyledComponents>
+            <br />
+            <Emotion></Emotion>
+            <br />
+            {/* <TailwindCss></TailwindCss> */}
         </Fragment>
     )
 }
